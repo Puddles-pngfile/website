@@ -3,16 +3,16 @@ import random
 app = Flask(__name__)
 
 
-@app.route('/')
+@app.route("/home")
 def home():
     name = "Verge"
     return render_template("index.html")
 
-app.route("/numgen"):
-def numgen():
-    rand = random.randint(0,1000)
-    return render_template("randnum.html")
-    
+
+@app.route("/RNGnumber")
+def number():
+    rand = random.randint(0,100)
+    return render_template("randnum.html", rand = rand )
 
 
 
