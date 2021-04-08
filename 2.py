@@ -9,7 +9,7 @@ app = Flask(__name__)
 def home():
     return render_template("home.html")
 
-app.route("/generator")
+@app.route("/generator")
 def number():
     return render_template("number.html", rand = random.randint(0,100)
 
@@ -17,6 +17,8 @@ def number():
 
 
 
-if "__main__" == __name__:
-    app.run()
+if __name__ == "__main__"
+    app.run(debug=True)
+
+
 
