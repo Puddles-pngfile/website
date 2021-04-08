@@ -11,7 +11,7 @@ def home():
 
 @app.route("/generator")
 def number():
-    return render_template("number.html", rand = random.randint(0,100)
+    return render_template("number.html", rand = random.randint(0,101)
 
 
 
