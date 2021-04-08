@@ -1,4 +1,4 @@
-from flask import Flask, redirect, url_for
+from flask import Flask, redirect, url_for, render_template
 import random
 app = Flask(__name__)
 
@@ -17,7 +17,7 @@ def number():
 
 if __name__ "__main__":
     app.run(debug=True)
-    
+
 
 
 
