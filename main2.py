@@ -19,8 +19,17 @@ def dice():
     return render_template("diceroll.html", dice=random.randint(1,6))
 
 @app.route("/generator")
-def number():
+def generator():
     return render_template("number.html", num=random.randint(0,100))
+
+
+@app.route("/snake")
+def number():
+    return render_template("snake.html")
+
+@app.route("/gamestore")
+def gamestore():
+    return render_template("gamestore.html")
 
 
 
