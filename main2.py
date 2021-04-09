@@ -35,6 +35,10 @@ def gamestore():
 def blocky():
     return render_template("blocky.html")
 
+@app.route("/race")
+def race():
+    return render_template("race game.html")
+
 
 
 
