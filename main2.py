@@ -31,6 +31,10 @@ def number():
 def gamestore():
     return render_template("gamestore.html")
 
+@app.route("/tetris")
+def blocky():
+    return render_template("blocky.html")
+
 
 
 
