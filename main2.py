@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return render_template("home.html")
+    return render_template("newhome.html")
 
 
 
@@ -23,7 +23,7 @@ def generator():
     return render_template("number.html", num=random.randint(0,100))
 
 
-@app.route("/snake")
+@app.route("/gamestore/snake")
 def number():
     return render_template("snake.html")
 
@@ -31,13 +31,25 @@ def number():
 def gamestore():
     return render_template("gamestore.html")
 
-@app.route("/tetris")
+@app.route("/gamestore/tetris")
 def blocky():
     return render_template("blocky.html")
 
-@app.route("/race")
+@app.route("/gamestore/flappybird")
 def race():
     return render_template("race game.html")
+
+
+@app.route("/diceroll2")
+def dc2():
+    return render_template("cookieclicker.html")
+
+@app.route("/cringe")
+def cringe():
+    return render_template("obama.css")
+
+
+
 
 
 
@@ -49,6 +61,11 @@ def race():
 @app.route("/joke")
 def joke():
     return render_template("joke.html")
+
+
+@app.route("/about")
+def about():
+    return render_template("aboutus.html")
 
 
 
